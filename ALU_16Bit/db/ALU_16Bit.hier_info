@@ -1,0 +1,822 @@
+|ALU_16Bit
+a[0] => ALU_1Bit:I0.a
+a[1] => ALU_1Bit:I1.a
+a[2] => ALU_1Bit:I2.a
+a[3] => ALU_1Bit:I3.a
+a[4] => ALU_1Bit:I4.a
+a[5] => ALU_1Bit:I5.a
+a[6] => ALU_1Bit:I6.a
+a[7] => ALU_1Bit:I7.a
+a[8] => ALU_1Bit:I8.a
+a[9] => ALU_1Bit:I9.a
+a[10] => ALU_1Bit:I10.a
+a[11] => ALU_1Bit:I11.a
+a[12] => ALU_1Bit:I12.a
+a[13] => ALU_1Bit:I13.a
+a[14] => ALU_1Bit:I14.a
+a[15] => ALU_1Bit:I15.a
+b[0] => ALU_1Bit:I0.b
+b[1] => ALU_1Bit:I1.b
+b[2] => ALU_1Bit:I2.b
+b[3] => ALU_1Bit:I3.b
+b[4] => ALU_1Bit:I4.b
+b[5] => ALU_1Bit:I5.b
+b[6] => ALU_1Bit:I6.b
+b[7] => ALU_1Bit:I7.b
+b[8] => ALU_1Bit:I8.b
+b[9] => ALU_1Bit:I9.b
+b[10] => ALU_1Bit:I10.b
+b[11] => ALU_1Bit:I11.b
+b[12] => ALU_1Bit:I12.b
+b[13] => ALU_1Bit:I13.b
+b[14] => ALU_1Bit:I14.b
+b[15] => ALU_1Bit:I15.b
+Opcode[0] => Mux0.IN10
+Opcode[0] => Mux1.IN10
+Opcode[0] => Mux2.IN10
+Opcode[0] => Mux3.IN10
+Opcode[0] => Mux4.IN10
+Opcode[0] => Mux5.IN10
+Opcode[1] => Mux0.IN9
+Opcode[1] => Mux1.IN9
+Opcode[1] => Mux2.IN9
+Opcode[1] => Mux3.IN9
+Opcode[1] => Mux4.IN9
+Opcode[1] => Mux5.IN9
+Opcode[2] => Mux0.IN8
+Opcode[2] => Mux1.IN8
+Opcode[2] => Mux2.IN8
+Opcode[2] => Mux3.IN8
+Opcode[2] => Mux4.IN8
+Opcode[2] => Mux5.IN8
+Result[0] <= ALU_1Bit:I0.Result
+Result[1] <= ALU_1Bit:I1.Result
+Result[2] <= ALU_1Bit:I2.Result
+Result[3] <= ALU_1Bit:I3.Result
+Result[4] <= ALU_1Bit:I4.Result
+Result[5] <= ALU_1Bit:I5.Result
+Result[6] <= ALU_1Bit:I6.Result
+Result[7] <= ALU_1Bit:I7.Result
+Result[8] <= ALU_1Bit:I8.Result
+Result[9] <= ALU_1Bit:I9.Result
+Result[10] <= ALU_1Bit:I10.Result
+Result[11] <= ALU_1Bit:I11.Result
+Result[12] <= ALU_1Bit:I12.Result
+Result[13] <= ALU_1Bit:I13.Result
+Result[14] <= ALU_1Bit:I14.Result
+Result[15] <= ALU_1Bit:I15.Result
+Overflow <= Overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I0
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I0|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I0|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I0|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I1
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I1|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I1|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I1|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I2
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I2|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I2|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I2|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I3
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I3|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I3|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I3|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I4
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I4|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I4|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I4|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I5
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I5|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I5|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I5|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I6
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I6|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I6|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I6|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I7
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I7|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I7|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I7|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I8
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I8|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I8|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I8|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I9
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I9|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I9|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I9|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I10
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I10|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I10|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I10|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I11
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I11|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I11|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I11|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I12
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I12|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I12|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I12|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I13
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I13|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I13|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I13|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I14
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I14|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I14|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I14|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I15
+a => BitInvert:I0.b
+b => BitInvert:I1.b
+AInv => BitInvert:I0.Binv
+BInv => BitInvert:I1.Binv
+CIn => fullAdd:I4.Cin
+Op[0] => Mux0.IN1
+Op[1] => Mux0.IN0
+Cout <= fullAdd:I4.Cout
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I15|BitInvert:I0
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I15|BitInvert:I1
+b => f.DATAB
+b => f.DATAA
+Binv => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16Bit|ALU_1Bit:I15|fullAdd:I4
+Cin => sum.IN1
+Cin => sum.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => sum.IN1
+Cin => sum.IN1
+a => sum.IN0
+a => sum.IN0
+a => Cout.IN1
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => Cout.IN1
+b => sum.IN1
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

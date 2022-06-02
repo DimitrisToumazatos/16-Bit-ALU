@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Jun 02 15:38:20 2022
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : ALU_1Bit
+Top-level Entity Name : ALU_1Bit
+Family : MAX V
+Device : 5M40ZM64C4
+Timing Models : Final
+Total logic elements : 5 / 40 ( 13 % )
+Total pins : 9 / 30 ( 30 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

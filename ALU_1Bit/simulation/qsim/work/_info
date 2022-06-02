@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_1Bit/simulation/qsim
+vALU_1Bit
+Z1 !s110 1654180238
+!i10b 1
+!s100 l][4OkC7;:Y0:XBPU3:g^2
+IC9e8mbg8_DNkR;Zh7e>z80
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1654180236
+8ALU_1Bit.vo
+FALU_1Bit.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1654180237.000000
+!s107 ALU_1Bit.vo|
+!s90 -work|work|ALU_1Bit.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@a@l@u_1@bit
+vALU_1Bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 e2BbSXBAKEUdC8X`7njfb2
+I6H<I<N=?hbSPOPGQ]W<f;0
+R2
+R0
+w1654180235
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1654180238.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@a@l@u_1@bit_vlg_vec_tst
