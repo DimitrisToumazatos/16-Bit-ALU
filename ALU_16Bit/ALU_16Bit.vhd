@@ -2,13 +2,13 @@ LIBRARY IEEE ;
 USE IEEE.STD_LOGIC_1164.all ;
 
 ENTITY ALU_16Bit IS
-	PORT (	a, b  				  : IN STD_LOGIC_VECTOR(15 DOWNTO 0) ;
-				Opcode				  : IN STD_LOGIC_VECTOR(2 DOWNTO 0) ;
-				Result				  : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) ;
-				Overflow				  : OUT STD_LOGIC ) ;
+	PORT (	a, b  				  : IN STD_LOGIC_VECTOR(15 DOWNTO 0) ; -- Stating a,b
+				Opcode				  : IN STD_LOGIC_VECTOR(2 DOWNTO 0) ; -- Stating Opcode
+				Result				  : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) ; -- Stating the Result of the operation
+				Overflow				  : OUT STD_LOGIC ) ;--Stating the Overflow variable 
 END ALU_16Bit;
 ARCHITECTURE Structural OF ALU_16Bit IS
-	COMPONENT ALU_1Bit
+	COMPONENT ALU_1Bit -- Using the 1Bit ALU as a component to construct a 16Bit ALU
 		PORT (	a, b, AInv, BInv, CIn  : IN STD_LOGIC ;
 					Op							  : IN STD_LOGIC_VECTOR(1 DOWNTO 0) ;
 			   	Cout, Result			  : OUT STD_LOGIC ) ;
@@ -17,7 +17,7 @@ ARCHITECTURE Structural OF ALU_16Bit IS
 	SIGNAL  Op					: STD_LOGIC_VECTOR(1 DOWNTO 0) ;
 	SIGNAL  Cout 				: STD_LOGIC_VECTOR(15 DOWNTO 0) ;	
 BEGIN
-	PROCESS (Opcode) IS
+	PROCESS (Opcode) IS -- Based on this process the operation selection happens
 	BEGIN
 			CASE Opcode IS
 					WHEN "000"=> Op <= "00" ; AInv <= '0' ; BInv <= '0' ; CIn <= '0' ;
@@ -30,6 +30,7 @@ BEGIN
 					WHEN OTHERS => NULL ;
 			END CASE ; 
 	END PROCESS ;
+	-- Using the 1Bit ALU for every single bit of the 16 bits
 	I0:  ALU_1Bit PORT MAP ( a(0), b(0), AInv, BInv, CIn, Op, Cout(0), Result(0) ) ; 
 	I1:  ALU_1Bit PORT MAP ( a(1), b(1), AInv, BInv, Cout(0), Op, Cout(1), Result(1) ) ; 
 	I2:  ALU_1Bit PORT MAP ( a(2), b(2), AInv, BInv, Cout(1), Op, Cout(2), Result(2) ) ; 
@@ -46,7 +47,7 @@ BEGIN
 	I13: ALU_1Bit PORT MAP ( a(13), b(13), AInv, BInv, Cout(12), Op, Cout(13), Result(13) ) ; 
 	I14: ALU_1Bit PORT MAP ( a(14), b(14), AInv, BInv, Cout(13), Op, Cout(14), Result(14) ) ; 
 	I15: ALU_1Bit PORT MAP ( a(15), b(15), AInv, BInv, Cout(14), Op, Cout(15), Result(15) ) ; 
-	PROCESS (Cout(14), Cout(15)) IS
+	PROCESS (Cout(14), Cout(15)) IS -- Process which checks if Overflow error happens
 			BEGIN
 				Overflow <= Cout(14) XOR Cout(15) ;
 	END PROCESS ;
