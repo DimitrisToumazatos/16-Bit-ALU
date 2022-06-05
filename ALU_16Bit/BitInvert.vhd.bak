@@ -8,7 +8,7 @@ END BitInvert ;
 
 ARCHITECTURE LogicFunc OF BitInvert IS
 BEGIN
-	PROCESS (b, Binv) -- bit b is reversed or not based on Binv
+	PROCESS (b, Binv) -- bit b is reversed base on Binv
 	BEGIN
 		IF(Binv = '0')THEN
 			f <= b ;

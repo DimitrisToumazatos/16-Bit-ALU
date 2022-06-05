@@ -1,5 +1,5 @@
 Fitter report for ALU_16Bit
-Thu Jun 02 16:29:25 2022
+Sun Jun 05 12:56:54 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Thu Jun 02 16:29:25 2022       ;
+; Fitter Status         ; Successful - Sun Jun 05 12:56:54 2022       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; ALU_16Bit                                   ;
 ; Top-level Entity Name ; ALU_16Bit                                   ;
@@ -140,7 +140,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/output_files/ALU_16Bit.pin.
+The pin-out file can be found in C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/output_files/ALU_16Bit.pin.
 
 
 +------------------------------------------------------------------+
@@ -744,7 +744,7 @@ Info (332111): Found 1 clocks
     Info (332111): ======== ============
     Info (332111):    1.000    Opcode[0]
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186215): Automatically promoted signal "Mux1~0" to use Global clock File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 22
+Info (186215): Automatically promoted signal "Mux1~0" to use Global clock File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 22
 Info (186079): Completed Auto Global Promotion Operation
 Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
@@ -757,7 +757,7 @@ Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
         Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  38 pins available
         Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  41 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -772,20 +772,20 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.76 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.77 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/output_files/ALU_16Bit.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/output_files/ALU_16Bit.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5889 megabytes
-    Info: Processing ended: Thu Jun 02 16:29:25 2022
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 5890 megabytes
+    Info: Processing ended: Sun Jun 05 12:56:54 2022
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/output_files/ALU_16Bit.fit.smsg.
+The suppressed messages can be found in C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/output_files/ALU_16Bit.fit.smsg.
 
 

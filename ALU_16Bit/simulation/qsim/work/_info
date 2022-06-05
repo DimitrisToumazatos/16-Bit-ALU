@@ -7,16 +7,16 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim
+dC:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim
 Ealu_16bit
-Z1 w1654178271
-Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z3 DPx4 maxv 14 maxv_atom_pack 0 22 `YXhbnPNiS:bB3zbmbF772
-Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z5 DPx4 maxv 15 maxv_components 0 22 EJJMbHV<EJ`DANOSmdPih1
-Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
+Z0 w1654423104
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx4 maxv 14 maxv_atom_pack 0 22 `YXhbnPNiS:bB3zbmbF772
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx4 maxv 15 maxv_components 0 22 EJJMbHV<EJ`DANOSmdPih1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 dC:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim
 Z8 8ALU_16Bit.vho
 Z9 FALU_16Bit.vho
 l0
@@ -25,21 +25,21 @@ VSVO;AfZ5zOUG>]fQT00RX1
 !s100 K?CFdYI@NP`FWa506zPRL3
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1654178272
+Z11 !s110 1654423105
 !i10b 1
-Z12 !s108 1654178272.000000
+Z12 !s108 1654423105.000000
 Z13 !s90 -work|work|ALU_16Bit.vho|
 Z14 !s107 ALU_16Bit.vho|
 !i113 1
 Z15 o-work work
 Z16 tExplicit 1 CvgOpt 0
 Astructure
+R1
 R2
 R3
 R4
 R5
 R6
-R7
 DEx4 work 9 alu_16bit 0 22 SVO;AfZ5zOUG>]fQT00RX1
 l164
 L48
@@ -56,41 +56,41 @@ R14
 R15
 R16
 Ealu_16bit_vhd_vec_tst
-Z17 w1654178270
+Z17 w1654423103
+R5
 R6
 R7
-R0
-Z18 8Waveform.vwf.vht
-Z19 FWaveform.vwf.vht
+Z18 8Waveform2.vwf.vht
+Z19 FWaveform2.vwf.vht
 l0
 L32
 VZ=N[m7EVU[?W=O9E?;lT02
 !s100 m8DPN@PODG?adCa`25UbH3
 R10
 32
-Z20 !s110 1654178273
+Z20 !s110 1654423106
 !i10b 1
-Z21 !s108 1654178273.000000
-Z22 !s90 -work|work|Waveform.vwf.vht|
-Z23 !s107 Waveform.vwf.vht|
+R12
+Z21 !s90 -work|work|Waveform2.vwf.vht|
+Z22 !s107 Waveform2.vwf.vht|
 !i113 1
 R15
 R16
 Aalu_16bit_arch
+R5
 R6
-R7
-Z24 DEx4 work 21 alu_16bit_vhd_vec_tst 0 22 Z=N[m7EVU[?W=O9E?;lT02
+Z23 DEx4 work 21 alu_16bit_vhd_vec_tst 0 22 Z=N[m7EVU[?W=O9E?;lT02
 l51
 L34
-V]9E:Hn;1gLUoalI9gjbj_0
-!s100 W:C3PH;h@7R`:eR^:Y[`e0
+VR@XgP]3M8YDYBOV6N51f:1
+!s100 nUfXmQ]VIHhz7m_FdQN?73
 R10
 32
 R20
 !i10b 1
+R12
 R21
 R22
-R23
 !i113 1
 R15
 R16

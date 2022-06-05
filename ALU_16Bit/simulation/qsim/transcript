@@ -1,7 +1,7 @@
 # do ALU_16Bit.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:57:52 on Jun 02,2022
+# Start time: 12:58:25 on Jun 05,2022
 # vcom -work work ALU_16Bit.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -12,20 +12,20 @@
 # -- Loading package maxv_components
 # -- Compiling entity ALU_16Bit
 # -- Compiling architecture structure of ALU_16Bit
-# End time: 16:57:53 on Jun 02,2022, Elapsed time: 0:00:01
+# End time: 12:58:25 on Jun 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:57:53 on Jun 02,2022
-# vcom -work work Waveform.vwf.vht 
+# Start time: 12:58:25 on Jun 05,2022
+# vcom -work work Waveform2.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ALU_16Bit_vhd_vec_tst
 # -- Compiling architecture ALU_16Bit_arch of ALU_16Bit_vhd_vec_tst
-# End time: 16:57:53 on Jun 02,2022, Elapsed time: 0:00:00
+# End time: 12:58:26 on Jun 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L maxv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ALU_16Bit_vhd_vec_tst 
-# Start time: 16:57:53 on Jun 02,2022
+# Start time: 12:58:26 on Jun 05,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -43,5 +43,5 @@
 # ** Warning: Design size of 15934 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#31
-# End time: 16:57:53 on Jun 02,2022, Elapsed time: 0:00:00
+# End time: 12:58:26 on Jun 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1

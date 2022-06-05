@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU_16Bit
-Thu Jun 02 16:29:21 2022
+Sun Jun 05 12:56:48 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Jun 02 16:29:21 2022       ;
+; Analysis & Synthesis Status ; Successful - Sun Jun 05 12:56:48 2022       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; ALU_16Bit                                   ;
 ; Top-level Entity Name       ; ALU_16Bit                                   ;
@@ -141,16 +141,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------+---------+
-; ALU_16Bit.vhd                    ; yes             ; User VHDL File        ; C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd ;         ;
-; alu_1bit.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/alu_1bit.vhd  ;         ;
-; bitinvert.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/bitinvert.vhd ;         ;
-; fulladd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/fulladd.vhd   ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                       ; Library ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------------+---------+
+; ALU_16Bit.vhd                    ; yes             ; User VHDL File        ; C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd ;         ;
+; alu_1bit.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/alu_1bit.vhd  ;         ;
+; bitinvert.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/bitinvert.vhd ;         ;
+; fulladd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/fulladd.vhd   ;         ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -289,54 +289,54 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Jun 02 16:29:08 2022
+    Info: Processing started: Sun Jun 05 12:56:35 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_16Bit -c ALU_16Bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file alu_16bit.vhd
-    Info (12022): Found design unit 1: ALU_16Bit-Structural File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 10
-    Info (12023): Found entity 1: ALU_16Bit File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 4
+    Info (12022): Found design unit 1: ALU_16Bit-Structural File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 10
+    Info (12023): Found entity 1: ALU_16Bit File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 4
 Info (12127): Elaborating entity "ALU_16Bit" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "Op", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "AInv", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "BInv", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "Cin", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Warning (10812): VHDL warning at ALU_16Bit.vhd(49): sensitivity list already contains Cout File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 49
-Info (10041): Inferred latch for "Cin" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Info (10041): Inferred latch for "BInv" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Info (10041): Inferred latch for "AInv" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Info (10041): Inferred latch for "Op[0]" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-Info (10041): Inferred latch for "Op[1]" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "Op", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "AInv", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "BInv", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at ALU_16Bit.vhd(20): inferring latch(es) for signal or variable "Cin", which holds its previous value in one or more paths through the process File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Warning (10812): VHDL warning at ALU_16Bit.vhd(50): sensitivity list already contains Cout File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 50
+Info (10041): Inferred latch for "Cin" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Info (10041): Inferred latch for "BInv" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Info (10041): Inferred latch for "AInv" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Info (10041): Inferred latch for "Op[0]" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+Info (10041): Inferred latch for "Op[1]" at ALU_16Bit.vhd(20) File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
 Warning (12125): Using design file alu_1bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ALU_1Bit-Structural File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 9
-    Info (12023): Found entity 1: ALU_1Bit File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 4
-Info (12128): Elaborating entity "ALU_1Bit" for hierarchy "ALU_1Bit:I0" File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 33
+    Info (12022): Found design unit 1: ALU_1Bit-Structural File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 9
+    Info (12023): Found entity 1: ALU_1Bit File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 4
+Info (12128): Elaborating entity "ALU_1Bit" for hierarchy "ALU_1Bit:I0" File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 34
 Warning (12125): Using design file bitinvert.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: BitInvert-LogicFunc File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/bitinvert.vhd Line: 9
-    Info (12023): Found entity 1: BitInvert File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/bitinvert.vhd Line: 4
-Info (12128): Elaborating entity "BitInvert" for hierarchy "ALU_1Bit:I0|BitInvert:I0" File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 20
+    Info (12022): Found design unit 1: BitInvert-LogicFunc File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/bitinvert.vhd Line: 9
+    Info (12023): Found entity 1: BitInvert File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/bitinvert.vhd Line: 4
+Info (12128): Elaborating entity "BitInvert" for hierarchy "ALU_1Bit:I0|BitInvert:I0" File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 20
 Warning (12125): Using design file fulladd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: fullAdd-Behavioral File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/fulladd.vhd Line: 8
-    Info (12023): Found entity 1: fullAdd File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/fulladd.vhd Line: 4
-Info (12128): Elaborating entity "fullAdd" for hierarchy "ALU_1Bit:I0|fullAdd:I4" File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 24
-Warning (13012): Latch Cin has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 16
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[0] File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
-Warning (13012): Latch AInv has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 16
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[1] File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
-Warning (13012): Latch BInv has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 16
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[1] File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
-Warning (13012): Latch Op[1] has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[1] File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
-Warning (13012): Latch Op[0] has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[2] File: C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
+    Info (12022): Found design unit 1: fullAdd-Behavioral File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/fulladd.vhd Line: 8
+    Info (12023): Found entity 1: fullAdd File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/fulladd.vhd Line: 4
+Info (12128): Elaborating entity "fullAdd" for hierarchy "ALU_1Bit:I0|fullAdd:I4" File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/alu_1bit.vhd Line: 24
+Warning (13012): Latch Cin has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 16
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[0] File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
+Warning (13012): Latch AInv has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 16
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[1] File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
+Warning (13012): Latch BInv has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 16
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[1] File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
+Warning (13012): Latch Op[1] has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[1] File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
+Warning (13012): Latch Op[0] has unsafe behavior File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Opcode[2] File: C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd Line: 6
 Info (21057): Implemented 150 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 98 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4769 megabytes
-    Info: Processing ended: Thu Jun 02 16:29:21 2022
+    Info: Peak virtual memory: 4762 megabytes
+    Info: Processing ended: Sun Jun 05 12:56:48 2022
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Total CPU time (on all processors): 00:00:29
 
 

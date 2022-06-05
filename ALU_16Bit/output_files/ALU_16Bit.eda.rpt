@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ALU_16Bit
-Thu Jun 02 16:57:51 2022
+Sun Jun 05 12:58:24 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Jun 02 16:57:51 2022 ;
+; EDA Netlist Writer Status ; Successful - Sun Jun 05 12:58:24 2022 ;
 ; Revision Name             ; ALU_16Bit                             ;
 ; Top-level Entity Name     ; ALU_16Bit                             ;
 ; Family                    ; MAX V                                 ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                       ;
-+--------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                  ;
-+--------------------------------------------------------------------------------------------------+
-; C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim//ALU_16Bit.vho ;
-+--------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                          ;
++---------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                     ;
++---------------------------------------------------------------------------------------------------------------------+
+; C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim//ALU_16Bit.vho ;
++---------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jun 02 16:57:51 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/" ALU_16Bit -c ALU_16Bit
+    Info: Processing started: Sun Jun 05 12:58:23 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/" ALU_16Bit -c ALU_16Bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ALU_16Bit.vho in folder "C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ALU_16Bit.vho in folder "C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4620 megabytes
-    Info: Processing ended: Thu Jun 02 16:57:51 2022
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sun Jun 05 12:58:24 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

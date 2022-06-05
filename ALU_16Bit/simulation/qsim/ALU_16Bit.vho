@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "06/02/2022 16:57:51"
+-- DATE "06/05/2022 12:58:24"
 
 -- 
 -- Device: Altera 5M160ZT100C4 Package TQFP100

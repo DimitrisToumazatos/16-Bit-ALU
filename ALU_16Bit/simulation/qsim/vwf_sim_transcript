@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_16Bit -c ALU_16Bit --vector_source="C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/Waveform.vwf" --testbench_file="C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_16Bit -c ALU_16Bit --vector_source="C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/Waveform2.vwf" --testbench_file="C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/Waveform2.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,15 +26,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jun 02 16:57:49 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_16Bit -c ALU_16Bit --vector_source="C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/Waveform.vwf" --testbench_file="C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/Waveform.vwf.vht"
+    Info: Processing started: Sun Jun 05 12:58:22 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_16Bit -c ALU_16Bit --vector_source="C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/Waveform2.vwf" --testbench_file="C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/Waveform2.vwf.vht"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/" ALU_16Bit -c ALU_16Bit
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/" ALU_16Bit -c ALU_16Bit
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -53,21 +53,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jun 02 16:57:51 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/" ALU_16Bit -c ALU_16Bit
+    Info: Processing started: Sun Jun 05 12:58:23 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/" ALU_16Bit -c ALU_16Bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ALU_16Bit.vho in folder "C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ALU_16Bit.vho in folder "C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4620 megabytes
-    Info: Processing ended: Thu Jun 02 16:57:51 2022
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sun Jun 05 12:58:24 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/ALU_16Bit.do generated.
+C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/ALU_16Bit.do generated.
 
 Completed successfully. 
 
@@ -84,7 +84,7 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:57:52 on Jun 02,2022
+# Start time: 12:58:25 on Jun 05,2022
 # vcom -work work ALU_16Bit.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -95,23 +95,23 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package maxv_components
 # -- Compiling entity ALU_16Bit
 # -- Compiling architecture structure of ALU_16Bit
-# End time: 16:57:53 on Jun 02,2022, Elapsed time: 0:00:01
+
+# End time: 12:58:25 on Jun 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:57:53 on Jun 02,2022
-# vcom -work work Waveform.vwf.vht 
-# -- Loading package STANDARD
 
+# Start time: 12:58:25 on Jun 05,2022
+# vcom -work work Waveform2.vwf.vht 
+# -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ALU_16Bit_vhd_vec_tst
 # -- Compiling architecture ALU_16Bit_arch of ALU_16Bit_vhd_vec_tst
-# End time: 16:57:53 on Jun 02,2022, Elapsed time: 0:00:00
+# End time: 12:58:26 on Jun 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L maxv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ALU_16Bit_vhd_vec_tst 
-# Start time: 16:57:53 on Jun 02,2022
+# Start time: 12:58:26 on Jun 05,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -130,20 +130,20 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # Expect performance to be adversely affected.
 # after#31
 
-# End time: 16:57:53 on Jun 02,2022, Elapsed time: 0:00:00
+# End time: 12:58:26 on Jun 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/Waveform.vwf...
+Reading C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/Waveform2.vwf...
 
-Reading C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/ALU_16Bit.msim.vcd...
+Reading C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/ALU_16Bit.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/simulation/qsim/ALU_16Bit_20220602165754.sim.vwf
+Writing the resulting VWF to C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/simulation/qsim/ALU_16Bit_20220605125826.sim.vwf
 
 Finished VCD to VWF conversion.
 

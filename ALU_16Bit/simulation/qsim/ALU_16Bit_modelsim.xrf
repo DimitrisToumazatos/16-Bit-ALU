@@ -1,12 +1,13 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/ALU_16Bit.vhd
+source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/ALU_16Bit.vhd
+source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/Waveform.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/alu_1bit.vhd
-source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/bitinvert.vhd
-source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Exercise 2/ALU_16Bit/fulladd.vhd
+source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/alu_1bit.vhd
+source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/bitinvert.vhd
+source_file = 1, C:/Users/ditou/Desktop/Digital System Design/Project 16-Bit ALU/Exercise 2/ALU_16Bit/fulladd.vhd
 design_name = ALU_16Bit
 instance = comp, \Opcode[1]~I\, Opcode[1], ALU_16Bit, 1
 instance = comp, \Opcode[2]~I\, Opcode[2], ALU_16Bit, 1
